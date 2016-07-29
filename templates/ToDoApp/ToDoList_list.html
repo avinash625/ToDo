@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Available Lists</title>
+</head>
+<body>
+<h1>The available list of lists , template in ToDoApp</h1>
+<ul>
+{% for list in objects %}
+    <li>{{ list.listName }} - {{ list.listDesc }}</li>
+{% empty %}
+    <li>NoLists present</li>
+{% endfor %}
+</ul>
+</body>
+</html>

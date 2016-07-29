@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Items</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>listName</td>
+        <td>listDesc</td>
+        <td>listDueDate</td>
+    </tr>
+    {% for item in items %}
+    <tr>
+        <td>{{ item.itemName }}</td>
+        <td>{{ item.itemDesc }}</td>
+        <td>{{ item.itemCompleted }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

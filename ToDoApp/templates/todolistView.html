@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lists</title>
+</head>
+<body>
+<h1>The List of available Lists</h1>
+<table>
+    <tr>
+        <td>listName</td>
+        <td>listDesc</td>
+        <td>listDueDate</td>
+    </tr>
+    {% for list in todolists %}
+    <tr>
+
+        <td><a href="/todo/items/{{ list.id }}">{{ list.listName }}</a></td>
+        <td>{{ list.listDesc }}</td>
+        <td>{{ list.listDueDate }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

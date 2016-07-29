@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete List</title>
+</head>
+<body>
+<h1>Delete an existing List using Class Based View</h1>
+<form action = "" method="post">
+    {% csrf_token %}
+    <p>Are you sure , you want to delete? "{{object}}"</p>
+    <input type="submit" value="Confirm"/>
+</form>
+</body>
+</html>
